@@ -1,12 +1,33 @@
-# React + Vite
+🔒 SecurePixel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SecurePixel is a browser-based web app that combines AES-256 encryption and LSB steganography to securely hide encrypted messages inside image files.
 
-Currently, two official plugins are available:
+Built using React.js and Vite, it works entirely on the client-side — ensuring full privacy.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Features
 
-## Expanding the ESLint configuration
+- Hide encrypted messages in PNG, JPEG, BMP images
+- AES-256 encryption with password or custom key
+- LSB-based steganography (invisible data hiding)
+- Responsive UI with live previews & progress bar
+- 100% offline and secure — no data sent to servers
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛠 Tech Stack
+
+- React.js + Vite
+- HTML5 Canvas API
+- AES via `crypto-js`
+- PBKDF2 for password-based key derivation
+
+ 🧪 How to Use
+
+1. Upload an image and enter your secret message
+2. Choose encryption method (key or password)
+3. Download the image with hidden message
+4. To decode, upload the stego image and enter the correct key/password
+
+![image](https://github.com/user-attachments/assets/54c05a74-00dc-475b-956a-7ed4323eb7e0)
+
+![image](https://github.com/user-attachments/assets/80fcde46-bd62-4a2b-b374-ffe70460d228)
+
+
